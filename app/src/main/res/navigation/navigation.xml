@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragmentSatu">
+
+    <fragment
+        android:id="@+id/fragmentSatu"
+        android:name="com.willyramad.chaptertiga.topicempat.FragmentSatu"
+        android:label="fragment_satu2"
+        tools:layout="@layout/fragment_satu2" >
+        <action
+            android:id="@+id/action_fragmentSatu_to_fragmentDua"
+            app:destination="@id/fragmentDua" />
+        <action
+            android:id="@+id/action_fragmentSatu_to_helpFragment"
+            app:destination="@id/helpFragment" />
+        <action
+            android:id="@+id/action_fragmentSatu_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_fragmentSatu_to_fragmentHome"
+            app:destination="@id/fragmentHome" />
+        <action
+            android:id="@+id/action_fragmentSatu_to_fragmentDua2"
+            app:destination="@id/fragmentDua" />
+        <action
+            android:id="@+id/action_fragmentSatu_to_fragmentTiga"
+            app:destination="@id/fragmentTiga" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDua"
+        android:name="com.willyramad.chaptertiga.topicempat.FragmentDua"
+        android:label="fragment_dua2"
+        tools:layout="@layout/fragment_dua2" >
+        <action
+            android:id="@+id/action_fragmentDua_to_fragmentTiga"
+            app:destination="@id/fragmentTiga" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentTiga"
+        android:name="com.willyramad.chaptertiga.topicempat.FragmentTiga"
+        android:label="fragment_tiga2"
+        tools:layout="@layout/fragment_tiga2" >
+        <action
+            android:id="@+id/action_fragmentTiga_to_fragmentSatu"
+            app:destination="@id/fragmentSatu" />
+        <argument
+            android:name="edumur"
+            app:argType="string"
+            android:defaultValue="dataumur" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.willyramad.chaptertiga.topicempat.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" />
+    <fragment
+        android:id="@+id/fragmentHome"
+        android:name="com.willyramad.chaptertiga.btnnav.FragmentHome"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="com.willyramad.chaptertiga.topicempat.HelpFragment"
+        android:label="fragment_help"
+        tools:layout="@layout/fragment_help" />
+</navigation>

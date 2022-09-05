@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="input1" type="id" />
+    <item name="input2" type="id" />
+    <item name="btnproses" type="id" />
+    <item name="texthasil" type="id" />
+</resources>
